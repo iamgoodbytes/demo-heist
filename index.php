@@ -1,5 +1,4 @@
 <?php
-    die('💩');
     include_once 'classes/Product.php';
 
     if (isset($_GET['search'])) {

@@ -16,7 +16,6 @@ class Product
     {
         $conn = DB::getConnection();
         $sql = "select * from products where title LIKE '%$searchTerm%'";
-        echo $sql;
         $result = $conn->query($sql);
 
         return $result->fetchAll(PDO::FETCH_OBJ);
